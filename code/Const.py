@@ -17,6 +17,16 @@ ENTITY_SPEED = {
     'Enemy2': 1
 }
 
+ENTITY_HEALTH = {
+    'Level1Bg0': 999,
+    'Level1Bg1': 999,
+    'Level1Bg2': 999,
+    'Player1': 300,
+    'Player2': 300,
+    'Enemy1': 50,
+    'Enemy2': 60
+}
+
 #M
 MENU_OPTION = ('Jogar',
                '1P - Competitive',
@@ -41,7 +51,7 @@ PLAYER_KEY_SHOOT = { 'Player1': pygame.K_RSHIFT,
                      'Player2': pygame.K_SPACE}
 
 #S
-SPAWN_TIME = 40000
+SPAWN_TIME = 4000
 
 #W
 WIN_WIDTH = 640
