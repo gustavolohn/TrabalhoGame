@@ -26,9 +26,11 @@ class Score:
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
             self.score_text(48, 'You Win!', COLOR_BLACK, SCORE_POS['Title'])
+            text = 'Player 1 enter your name (4 characters): '
+            score = player_score[0]
+
             if game_mode == MENU_OPTION[0]:
                 score = player_score[0]
-                text = 'Player 1 enter your name (4 characters): '
 
             elif game_mode == MENU_OPTION[1]:
                 score = max(player_score)
