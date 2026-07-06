@@ -15,6 +15,7 @@ class Menu:
 
         menu_option = 0
         pygame.mixer_music.load('./asset/MenuMusic.mp3')
+        pygame.mixer.music.set_volume(0.1)
         pygame.mixer_music.play(-1)
 
         while True:
