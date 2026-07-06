@@ -1,10 +1,12 @@
 #C
 import pygame
+from pygame.examples.grid import WINDOW_WIDTH
 
 COLOR_YELLOW = (255, 222, 89)
 COLOR_WHITE = (255, 255, 255)
 COLOR_GREEN = (0, 128, 0)
 COLOR_CYAN = (0, 128, 128)
+COLOR_BLACK = (0, 0, 0)
 
 #E
 EVENT_ENEMY = pygame.USEREVENT + 1
@@ -120,12 +122,27 @@ PLAYER_KEY_SHOOT = { 'Player1': pygame.K_RSHIFT,
 
 #S
 SPAWN_TIME = 4000
+SCORE_POS = {'Title': (WINDOW_WIDTH / 3, 150),
+             'EnterName': (WINDOW_WIDTH / 3,170),
+             'Label': (WINDOW_WIDTH / 3,200),
+             'Name': (WINDOW_WIDTH / 3,220),
+             0: (WINDOW_WIDTH / 3,220),
+             1: (WINDOW_WIDTH / 3,240),
+             2: (WINDOW_WIDTH / 3,260),
+             3: (WINDOW_WIDTH / 3,280),
+             4: (WINDOW_WIDTH / 3,300),
+             5: (WINDOW_WIDTH / 3,320),
+             6: (WINDOW_WIDTH / 3,340),
+             7: (WINDOW_WIDTH / 3,360),
+             8: (WINDOW_WIDTH / 3,380),
+             9: (WINDOW_WIDTH / 3,400),
+             }
 
 #T
 
 TIMEOUT_STEP = 100 #100ms
 
-TIMEOUT_LEVEL = 60000 #60s
+TIMEOUT_LEVEL = 5000 #60s
 
 #W
 WIN_WIDTH = 640
