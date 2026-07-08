@@ -52,9 +52,11 @@ class Level:
 
                 if ent.name == "Player1":
                     self.level_text(25, f'Player1 - HP: {ent.health} | Score: {ent.score}', COLOR_GREEN, (10, 25))
+                    self.level_text(25, f'Mover: Setas do Teclado | Atirar: RShift ', COLOR_WHITE, (10 , 45))
 
                 if ent.name == "Player2":
-                    self.level_text(25, f'Player2 - HP: {ent.health} | Score: {ent.score}', COLOR_CYAN, (10, 45))
+                    self.level_text(25, f'Player2 - HP: {ent.health} | Score: {ent.score}', COLOR_CYAN, (10, 65))
+                    self.level_text(25, f'Mover: W A S D | Atirar: SPACE ', COLOR_WHITE, (10, 85))
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
